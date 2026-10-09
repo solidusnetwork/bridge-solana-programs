@@ -1,0 +1,31 @@
+[package]
+name = "gated-usdc-receiver"
+version = "0.1.0"
+description = "Solidus bridge: USDC over CCTP v2 that only a credentialed recipient can receive"
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "gated_usdc_receiver"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = "1.2.0"
+solana-keccak-hasher = "3"
+solidus-gate = { path = "../../crates/solidus-gate" }
+# The SAME codec the chain, the EVM contracts and the SDK's hook encoder are pinned to.
+solidus-bridge-codec = { path = "../../crates/solidus-bridge-codec" }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }

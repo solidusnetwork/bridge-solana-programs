@@ -1,0 +1,9 @@
+[package]
+name = "solidus-bridge-codec"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Solidus bridge message layouts, ids and consent digests (no_std, shared by the chain, the contracts and the SDK)"
+
+[dependencies]
+sha3 = { version = "0.10", default-features = false }

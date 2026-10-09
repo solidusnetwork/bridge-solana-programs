@@ -1,0 +1,26 @@
+[package]
+name = "solidus-mirror-tests"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+
+[dev-dependencies]
+solidus-mirror = { path = "../programs/solidus_mirror", features = ["no-entrypoint"] }
+example-gated = { path = "../programs/example_gated", features = ["no-entrypoint"] }
+gated-usdc-receiver = { path = "../programs/gated_usdc_receiver", features = ["no-entrypoint"] }
+base64 = "0.22"
+solana-account = "3"
+solidus-gate = { path = "../crates/solidus-gate" }
+serde_json = "1"
+solidus-bridge-codec = { path = "../crates/solidus-bridge-codec" }
+anchor-lang = "1.2.0"
+litesvm = "0.10.0"
+solana-message = "3.0.1"
+solana-transaction = "3.0.2"
+solana-signer = "3.0.0"
+solana-keypair = "3.0.1"
+k256 = { version = "0.13", features = ["ecdsa"] }
+sha3 = "0.10"

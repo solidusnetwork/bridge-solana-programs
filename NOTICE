@@ -1,0 +1,6 @@
+Solidus bridge programs for Solana. Copyright Solidus Network. Licensed under the Apache License 2.0.
+
+tests/fixtures/cctp/ holds account snapshots of Circle's CCTP v2 programs on Solana devnet and two of
+Circle's compiled programs (message_transmitter_v2.so, token_messenger_minter_v2.so), used only by the
+tests. They are Circle's work, published by Circle under the Apache License 2.0 at
+https://github.com/circlefin/solana-cctp-contracts.

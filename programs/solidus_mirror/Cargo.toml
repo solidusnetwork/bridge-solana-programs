@@ -1,0 +1,31 @@
+[package]
+name = "solidus-mirror"
+version = "0.1.0"
+description = "Solidus credential mirror on Solana: applies validator-attested Solidus bridge messages in strict order"
+edition.workspace = true
+rust-version.workspace = true
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solidus_mirror"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = "1.2.0"
+solana-secp256k1-recover = "3"
+solana-keccak-hasher = "3"
+# The SAME codec the chain and the EVM contracts' vectors come from, so a layout cannot drift.
+solidus-bridge-codec = { path = "../../crates/solidus-bridge-codec" }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }

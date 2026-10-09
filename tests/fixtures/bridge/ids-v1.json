@@ -1,0 +1,111 @@
+{
+  "credentialTypeHash": [
+    {
+      "expected": "0x87c126e921af54dba095ba0e5f14466b0d7821f1c456ea874a2ccb0952fab275",
+      "serdeName": "Email"
+    },
+    {
+      "expected": "0x8444bdf0362897e042b9cbb8f6b29e641d8b2045dab3a26b0b6cc58487a62486",
+      "serdeName": "Phone"
+    },
+    {
+      "expected": "0x1e4a9c4464d193289c352b552766cc1d4802ef71499604fe24fa6278cd38ed3c",
+      "serdeName": "KycL1"
+    },
+    {
+      "expected": "0xfe0162516c187bfcca77d39aaad8c76a01662e355471db3e524d26c15c8f0d8e",
+      "serdeName": "KycL2"
+    },
+    {
+      "expected": "0x7ff1193be5df803ea03f96ab93c561275a4d28f6b324ae199de842fd4c7ca03e",
+      "serdeName": "KycL3"
+    },
+    {
+      "expected": "0x4b20eaee2e06518a85e41137e8fdec5cb95e3e029a8c9495b4d4f9606f0eadea",
+      "serdeName": "Age"
+    },
+    {
+      "expected": "0x223a40578ad916ee41e8d4572cd4354901c2ce97ea72a639373cd7295a35187f",
+      "serdeName": "Reputation"
+    },
+    {
+      "expected": "0xa469c8661cdccb47a9fb39d9b6f3415da1424e5b3fc9022d0ecc886d6dbc78b6",
+      "serdeName": "OwnerBinding"
+    },
+    {
+      "expected": "0xfb291877450009ee1739062364875f3eec4ab6eef3676295f1668cd760dacd7a",
+      "serdeName": "CapabilityScope"
+    },
+    {
+      "expected": "0x55611cb610fd7c518ceaa26a5b904ba1bfccb3848e9dff657a030d94bd5bdeb9",
+      "serdeName": "SpendMandate"
+    },
+    {
+      "expected": "0x2441a0c1d6f4d510fbb124479c0bb15f6f7251d34625c06da989accce536d3ed",
+      "serdeName": "AccreditedIssuer"
+    }
+  ],
+  "exportId": [
+    {
+      "credentialId": "urn:solidus:credential:00ff",
+      "domain": 11155111,
+      "expected": "0x3a00a6066d75e2152d2091c439ed19cb3dac1b6df750d2ba9c4c05fe5ee52991",
+      "holder": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+    },
+    {
+      "credentialId": "urn:solidus:credential:00ff",
+      "domain": 43113,
+      "expected": "0xce06d0dfc317021607ffcd1638b6c7e4037e834f5d2f180ed8e7341b0382e587",
+      "holder": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+    },
+    {
+      "credentialId": "urn:solidus:credential:00ff",
+      "domain": 5042002,
+      "expected": "0x278736e06092f162c969034d61000415659e81f75dcaff951fa3fbeed0c666c1",
+      "holder": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+    }
+  ],
+  "gateKey": [
+    {
+      "credentialTypeHash": "0xfe0162516c187bfcca77d39aaad8c76a01662e355471db3e524d26c15c8f0d8e",
+      "expected": "0x6496e51e7fc00a470f94a7a6baaa849421659d33d002a950a3b33f0efc2f6046",
+      "holder": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "issuerDidHash": "0xc931ceca639babe77a78fe4cf221f06de64d80dd1c88f8fb1739c97e4b3bd970"
+    }
+  ],
+  "issuerDidHash": [
+    {
+      "expected": "0xc931ceca639babe77a78fe4cf221f06de64d80dd1c88f8fb1739c97e4b3bd970",
+      "issuerDid": "did:solidus:testnet:verify"
+    },
+    {
+      "expected": "0x579978f998c82042ef44b5e2b5a4cd24cb60455e54c66c68c61fdd1e0d89db80",
+      "issuerDid": "did:solidus:testnet:abc"
+    },
+    {
+      "expected": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "issuerDid": ""
+    }
+  ],
+  "transferId": [
+    {
+      "amount": "0x0000000000000000000000000000000000000000000000000000000005f5e100",
+      "deadline": "1900000000",
+      "depositNonce": "7",
+      "expected": "0x355513b0e1735c76ab87a8a906a24a599af6dfb4d19ca8bd5c773133c4bacafc",
+      "originDomain": 50002,
+      "recipient": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "token": "0x000000000000000000000000e7f1725e7734ce288f8367e1bb143e90bb3f0512"
+    },
+    {
+      "amount": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "deadline": "0",
+      "depositNonce": "18446744073709551615",
+      "expected": "0x734cc061a2b2ac44c491ccf97f5fa66af16075d70e5a7726c66df41a2c24d773",
+      "originDomain": 11155111,
+      "recipient": "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "token": "0x000000000000000000000000e7f1725e7734ce288f8367e1bb143e90bb3f0512"
+    }
+  ],
+  "version": 1
+}

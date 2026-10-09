@@ -1,0 +1,16 @@
+# Toolchain: anchor 1.2.0, solana 4.1.2.
+# ⚠ Build the programs with `cargo build-sbf --arch v0`: `anchor build` emits SBPF v3.
+[toolchain]
+anchor_version = "1.2.0"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+solidus_mirror = "2MWe3EHixse6MGx5gBjqdY54Xn3SZ2bmkaSXnXp6tg7u"
+example_gated = "FSssMtBBVvMc3t6Aj1mUJTyu2X3qF4rgC2HHt3oWcocQ"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"

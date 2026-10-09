@@ -1,0 +1,29 @@
+[package]
+name = "example-gated"
+version = "0.1.0"
+description = "Example: a vault whose deposit is gated on a Solidus KycL2 credential (twin of ExampleGatedVault.sol)"
+edition.workspace = true
+rust-version.workspace = true
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "example_gated"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = "1.2.0"
+solidus-gate = { path = "../../crates/solidus-gate" }
+solidus-bridge-codec = { path = "../../crates/solidus-bridge-codec" }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }

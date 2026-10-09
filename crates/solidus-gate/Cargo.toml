@@ -1,0 +1,12 @@
+[package]
+name = "solidus-gate"
+version = "0.1.0"
+description = "Check a Solidus credential gate on Solana by reading the solidus_mirror PDAs"
+edition.workspace = true
+rust-version.workspace = true
+license = "Apache-2.0"
+
+[dependencies]
+anchor-lang = "1.2.0"
+solidus-mirror = { path = "../../programs/solidus_mirror", features = ["cpi"] }
+solidus-bridge-codec = { path = "../solidus-bridge-codec" }
